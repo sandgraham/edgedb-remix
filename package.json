@@ -1,0 +1,15 @@
+{
+  "name": "quickstart",
+  "scripts": {
+    "gen": "npx edgeql-js",
+    "start": "node main.js",
+    "build": "tsc",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "@types/node": "^18.6.3",
+    "edgedb": "^0.21.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
