@@ -1,5 +1,5 @@
 {
-  "name": "remix-edgedb",
+  "name": "edgedb-remix",
   "private": true,
   "sideEffects": false,
   "scripts": {
