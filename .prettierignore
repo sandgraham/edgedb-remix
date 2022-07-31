@@ -1,4 +1,12 @@
-dbschema
 node_modules
-build
+
+dbschema
+app/__edgeql
+app/tailwind.css
+
+/.cache
+/build
+/public/build
+.env
+
 package-lock.json

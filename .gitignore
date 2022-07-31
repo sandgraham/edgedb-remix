@@ -1,3 +1,9 @@
-dbschema/edgeql-js
 node_modules
-build
+
+app/__edgeql
+app/tailwind.css
+
+/.cache
+/build
+/public/build
+.env
