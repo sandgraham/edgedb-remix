@@ -1,7 +1,6 @@
 node_modules
 
 app/__edgeql
-app/tailwind.css
 
 /.cache
 /build

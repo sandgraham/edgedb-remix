@@ -2,7 +2,6 @@ node_modules
 
 dbschema
 app/__edgeql
-app/tailwind.css
 
 /.cache
 /build

@@ -23,8 +23,8 @@ export const loader: LoaderFunction = async () => {
 export default function Index() {
   const data = useLoaderData<LoaderData>();
   return (
-    <div className="text-slate-800">
-      <h2 className="text-xl">Persons</h2>
+    <div className="">
+      <h2 className="">Persons</h2>
       <ul className="">
         {data.persons.map((p) => (
           <li key={p.id} className="">
@@ -33,7 +33,7 @@ export default function Index() {
         ))}
       </ul>
       <br />
-      <h2 className="text-xl">Movies</h2>
+      <h2 className="">Movies</h2>
       <ul className="">
         {data.movies.map((m) => (
           <li key={m.id} className="">
