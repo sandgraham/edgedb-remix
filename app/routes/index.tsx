@@ -2,6 +2,7 @@ import edgeql, { Movie, Person } from "~/__edgeql";
 import { json, LoaderFunction } from "@remix-run/node";
 import { useLoaderData } from "@remix-run/react";
 import { db } from "~/utils/db.server";
+import { box, css } from "~/styles/stitches.config";
 
 type LoaderData = { persons: Person[]; movies: Movie[] };
 
@@ -20,11 +21,13 @@ export const loader: LoaderFunction = async () => {
   return json({ persons, movies });
 };
 
+const header = css({ fontFamily: "$serif", fontSize: 24 });
+
 export default function Index() {
   const data = useLoaderData<LoaderData>();
   return (
     <div className="">
-      <h2 className="">Persons</h2>
+      <h2 className={header()}>Persons</h2>
       <ul className="">
         {data.persons.map((p) => (
           <li key={p.id} className="">
@@ -33,7 +36,7 @@ export default function Index() {
         ))}
       </ul>
       <br />
-      <h2 className="">Movies</h2>
+      <h2 className={header()}>Movies</h2>
       <ul className="">
         {data.movies.map((m) => (
           <li key={m.id} className="">
